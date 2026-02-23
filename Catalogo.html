@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+
+<header class="header container">
+ <nav class="nav container">
+     <div class="nav_brand">
+        <img src="images/logo.png" class="logo_img">
+        <h2 class="brand_title">Bienvenido a MysticGames</h2>
+    </div>
+
+    <ul class="nav_link nav_link--menu">
+        <li class="nav_items"><a href="index.html" class="nav_links">Inicio</a></li>
+        <li class="nav_items"><a href="Catalogo.html" class="nav_links">Catálogo</a></li>
+        <li class="nav_items"><a href="#" class="nav_links">Contacto</a></li>
+        <li class="nav_items"><a href="#" class="nav_links">Reseñas</a></li>
+        <img src="./images/Close.png" class="nav_close">
+    </ul>
+
+    <div class="nav_menu">
+        <img src="./images/menu.png" class="nav_img">
+    </div>
+ </nav>
+</header> <!-- 🔥 CERRAMOS EL HEADER -->
+
+<section class="products container" id="catalogo">
+    <h2 class="section_title">Catálogo completo</h2>
+
+    <input type="text" id="buscador" placeholder="Buscar producto...">
+
+    <div class="filtros">
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('accesorios')">Accesorios</button>
+        <button onclick="filtrar('juguetes')">Juguetes</button>
+        <button onclick="filtrar('marvel')">marvel</button>
+        <button onclick="filtrar('DC')">DC</button>
+        <button onclick="filtrar('manga/anime')">manga/anime</button>
+        <button onclick="filtrar('armas-plastico')">armas-plastico</button>
+        <button onclick="filtrar('cotillón')">cotillón</button>
+        <button onclick="filtrar('juego_de_mesa')">Juego de mesa</button>
+    </div>
+
+    <div class="products_grid">
+
+    <a href="LlaveroDeMessi.html" 
+        class="product_card"
+        data-category="accesorios"
+        data-name="llavero messi"
+        data-usd="9.28">
+
+            <img src="./images/Llavero_Messi.png" class="product_img">
+            <h3 class="product_title">Llavero de Messi</h3>
+            <p class="product_price" data-usd="2.5"></p>
+    </a>
+
+    <a href="MartilloDeThor.html" 
+        class="product_card"
+        data-category="juguetes marvel armas-plastico"
+        data-name="martillo de thor"
+        data-usd="9.285">
+
+            <img src="images/Martilo_thor.png" class="product_img">
+            <h3 class="product_title">Martillo de Thor</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+        
+
+    <a href="HachaDeThor.html" 
+        class="product_card"
+        data-category="juguetes marvel armas-plastico"
+        data-name="Hacha de Thor"
+        data-usd="9.285">
+
+            <img src="images/Hacha_thor.png" class="product_img">
+            <h3 class="product_title">Hacha de Thor</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+        
+
+    <a href="EspadaDeThanos.html" 
+        class="product_card"
+        data-category="juguetes marvel armas-plastico"
+        data-name="espada de thanos"
+        data-usd="13">
+
+            <img src="images/Espada_Thanos.png" class="product_img">
+            <h3 class="product_title">Espada de Thanos</h3>
+            <p class="product_price" data-usd="13"></p>
+            
+    </a>
+
+
+    <a href="Sais.html" 
+        class="product_card"
+        data-category="juguetes DC armas-plastico"
+        data-name="Sais de Raphael Tortugas Ninja"
+        data-usd="10">
+
+            <img src="images/Sais_Raphael.png" class="product_img">
+            <h3 class="product_title">Sais de Raphael (Tortugas Ninja)</h3>
+            <p class="product_price" data-usd="10"></p>
+            
+    </a>
+
+    
+
+    <a href="BatiKit.html" 
+        class="product_card"
+        data-category="juguetes DC armas-plastico"
+        data-name="Batman kit"
+        data-usd="35.7">
+
+            <img src="images/BatiKit.png" class="product_img">
+            <h3 class="product_title">Kit de artilugios de Batman</h3>
+            <p class="product_price" data-usd="35.7"></p>
+            
+    </a>
+
+
+    
+
+    <a href="BatiShurikenGrande.html" 
+        class="product_card"
+        data-category="juguetes DC armas-plastico"
+        data-name="Batishuriken Shuriken Batman"
+        data-usd="3.21">
+
+            <img src="images/BatiShurikens.png" class="product_img">
+            <h3 class="product_title">Batishuriken de Batman (grande) </h3>
+            <p class="product_price" data-usd="3.214"></p>
+            
+    </a>
+
+    
+
+    <a href="BatiShurikenChica.html" 
+        class="product_card"
+        data-category="juguetes DC armas-plastico"
+        data-name="Batishuriken Shuriken Batman"
+        data-usd="2.6">
+
+            <img src="images/BatiShurikenChica.png" class="product_img">
+            <h3 class="product_title">Batishuriken de Batman (chica) </h3>
+            <p class="product_price" data-usd="2.6"></p>
+            
+    </a>
+
+
+    <a href="BatiKunai.html" 
+        class="product_card"
+        data-category="juguetes DC armas-plastico"
+        data-name="Batikunai kunai Batman"
+        data-usd="4.05">
+
+            <img src="images/BatiKunai.png" class="product_img">
+            <h3 class="product_title">Batikunai de Batman</h3>
+            <p class="product_price" data-usd="4.05"></p>
+            
+    </a>
+
+    <a href="KunaiGrande.html" 
+        class="product_card"
+        data-category="juguetes manga/anime armas-plastico"
+        data-name="kunai Naruto"
+        data-usd="4.05">
+
+            <img src="images/KunaiGrande.png" class="product_img">
+            <h3 class="product_title">Kunai de Naruto (Grande)</h3>
+            <p class="product_price" data-usd="4.05"></p>
+            
+    </a>
+
+
+    <a href="KunaiChica.html" 
+        class="product_card"
+        data-category="juguetes manga/anime armas-plastico"
+        data-name="kunai Naruto"
+        data-usd="2.282">
+
+            <img src="images/KunaiChica.png" class="product_img">
+            <h3 class="product_title">Kunai de Naruto (Chica)</h3>
+            <p class="product_price" data-usd="2.282"></p>
+            
+    </a>  
+
+    <a href="KunaiAkatsuki.html" 
+        class="product_card"
+        data-category="juguetes manga/anime armas-plastico"
+        data-name="kunai de akatsuki Naruto"
+        data-usd="3.21">
+
+            <img src="images/KunaiAkatsuki.png" class="product_img">
+            <h3 class="product_title">Kunai de Akatsuki (Naruto)</h3>
+            <p class="product_price" data-usd="3.214"></p>
+            
+    </a>
+
+    <a href="PulseraFloreada.html" 
+        class="product_card"
+        data-category="accesorios cotillón"
+        data-name="pulsera floreada"
+        data-usd="1.2">
+
+            <img src="images/Pulsera_Floreada.png" class="product_img">
+            <h3 class="product_title">Pulsera floreada (pack de seis)</h3>
+            <p class="product_price" data-usd="1.2"></p>
+            
+    </a>
+
+    <a href="Aviones.html" 
+        class="product_card"
+        data-category="juguetes cotillón"
+        data-name="Avion de plastico"
+        data-usd="1.6">
+
+            <img src="images/Aviones.png" class="product_img">
+            <h3 class="product_title">Aviones de plastico (pack de doce)</h3>
+            <p class="product_price" data-usd="1.6"></p>
+            
+    </a>
+
+
+    <a href="Motos.html" 
+        class="product_card"
+        data-category="juguetes cotillón"
+        data-name="motos de plastico"
+        data-usd="1.6">
+
+            <img src="images/Motos.png" class="product_img">
+            <h3 class="product_title">Motos de plastico (pack de doce)</h3>
+            <p class="product_price" data-usd="1.6"></p>
+            
+    </a>
+        
+
+    <a href="Dinosaurios.html" 
+        class="product_card"
+        data-category="juguetes cotillón"
+        data-name="Dinosaurios de plastico"
+        data-usd="3.3">
+
+            <img src="images/Dinosaurios.png" class="product_img">
+            <h3 class="product_title">Dinosaurios de plastico (pack de doce)</h3>
+            <p class="product_price" data-usd="3.3"></p>
+            
+    </a>
+
+    <a href="RompeCabezas.html" 
+        class="product_card"
+        data-category="cotillón juego_de_mesa"
+        data-name="Dinosaurios de plastico"
+        data-usd="3.3">
+
+            <img src="images/RompeCabezas.png" class="product_img">
+            <h3 class="product_title">RompeCabezas</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="CajaAnimales.html" 
+        class="product_card"
+        data-category="juego_de_mesa"
+        data-name="Valijita los animales"
+        data-usd="9.285">
+
+            <img src="images/Los_animales.png" class="product_img">
+            <h3 class="product_title">Valijita: Los animales</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+
+    <a href="CajaDino.html" 
+        class="product_card"
+        data-category="juego_de_mesa"
+        data-name="Valijita los dinosaurios"
+        data-usd="9.285">
+
+            <img src="images/CajaDinos.png" class="product_img">
+            <h3 class="product_title">Valijita: Los dinosaurios</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+
+    <a href="CajaBichitos.html" 
+        class="product_card"
+        data-category="juego_de_mesa"
+        data-name="Valijita mis bichitos"
+        data-usd="9.285">
+
+            <img src="images/CajaBichitos.png" class="product_img">
+            <h3 class="product_title">Valijita: Mis bichitos</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+
+    <a href="CajaCirco.html" 
+        class="product_card"
+        data-category="juego_de_mesa"
+        data-name="Valijita el circo"
+        data-usd="9.285">
+
+            <img src="images/CajaCirco.png" class="product_img">
+            <h3 class="product_title">Valijita: el circo</h3>
+            <p class="product_price" data-usd="9.285"></p>
+            
+    </a>
+
+    </div>
+</section>
+
+<script src="./js/config.js"></script>
+<script src="./js/filtro.js"></script>
+<script src="./js/precio.js"></script>
+
+
+</body>
+</html>

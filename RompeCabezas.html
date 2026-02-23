@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RompeCabezas</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+
+<header class="header container">
+ <nav class="nav container">
+     <div class="nav_brand">
+        <img src="images/logo.png" class="logo_img">
+        <h2 class="brand_title">Bienvenido a MysticGames</h2>
+    </div>
+
+    <ul class="nav_link nav_link--menu">
+        <li class="nav_items"><a href="index.html" class="nav_links">Inicio</a></li>
+        <li class="nav_items"><a href="Catalogo.html" class="nav_links">Catálogo</a></li>
+        <li class="nav_items"><a href="#" class="nav_links">Contacto</a></li>
+        <li class="nav_items"><a href="#" class="nav_links">Reseñas</a></li>
+        <img src="./images/Close.png" class="nav_close">
+    </ul>
+
+    <div class="nav_menu">
+        <img src="./images/menu.png" class="nav_img">
+    </div>
+ </nav>
+</header> <!-- 🔥 CERRAMOS EL HEADER -->
+
+<section class="products container" id="catalogo">
+    <h2 class="section_title">Todos los RompeCabezas</h2>
+
+    <input type="text" id="buscador" placeholder="Buscar producto...">
+
+    <div class="filtros">
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('Marvel')">Marvel</button>
+    </div>
+
+    <div class="products_grid">
+
+   <a href="RompeCabezasMickeyMouse2.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Mickey mouse"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezasMickeyMouse2.png" class="product_img">
+            <h3 class="product_title">Mickey mouse y sus amigos (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="RompeCabezasMickey.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Mickey mouse"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezasMickey.png" class="product_img">
+            <h3 class="product_title">Mickey Mouse aventura sobre ruedas (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="RompeCabezasLittlePony.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="My Little Pony"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaLittlePony.png" class="product_img">
+            <h3 class="product_title">My Little Pony (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="RompeCabezasLittlePonyEquestriaGirls.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="My Little Pony"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaMyLittlePony2.png" class="product_img">
+            <h3 class="product_title">My Little Pony Equestria Girls (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="RompeCabezasMonsterTown.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Monster town"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaMonsterTown.png" class="product_img">
+            <h3 class="product_title">Monster Town (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    <a href="RompeCabezasSpiderman.html" 
+        class="product_card"
+        data-category="juguetes Marvel"
+        data-name="Spiderman hombre araña"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezasSpiderman.png" class="product_img">
+            <h3 class="product_title">SpiderMan (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasIronman.html" 
+        class="product_card"
+        data-category="juguetes Marvel"
+        data-name="Ironman"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaIronMan.png" class="product_img">
+            <h3 class="product_title">Ironman (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezaHulk.html" 
+        class="product_card"
+        data-category="juguetes Marvel"
+        data-name="Hulk"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaHulk.png" class="product_img">
+            <h3 class="product_title">Hulk (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+   </a>
+
+   <a href="RompeCabezaCapitanAmerica.html" 
+        class="product_card"
+        data-category="juguetes Marvel"
+        data-name="Capitan America"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaCapitanAmerica.png" class="product_img">
+            <h3 class="product_title">Capitan America (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+   </a>
+
+   <a href="RompeCabezasThanos.html" 
+        class="product_card"
+        data-category="juguetes Marvel"
+        data-name="Thanos"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaThanos.png" class="product_img">
+            <h3 class="product_title">Thanos (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezaGoku.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Goku Dragon ball"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaGoku.png" class="product_img">
+            <h3 class="product_title">Goku (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasChicasSuperPoderosas.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Chicas super poderosas"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaChicasSuperPoderosas.png" class="product_img">
+            <h3 class="product_title">Chicas super poderosas (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+
+
+   <a href="RompeCabezasPocoyo.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Pocoyo"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezasPocoyo.png" class="product_img">
+            <h3 class="product_title">Pocoyo (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezaZenon.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="La granja de Zenon"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaGranjaDeZenon.png" class="product_img">
+            <h3 class="product_title">La granja de Zenon (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasLolSuprise.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="L.O.L Suprise"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaLolSuprise.png" class="product_img">
+            <h3 class="product_title">L.O.L. Suprise (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasRoblox.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Roblox"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaRoblox.png" class="product_img">
+            <h3 class="product_title">Roblox (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezaCrossover.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Disney"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaCrossover.png" class="product_img">
+            <h3 class="product_title">Crossover (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasGumball.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="El increible mundo de Gumball"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaGumball.png" class="product_img">
+            <h3 class="product_title">El increible mundo de Gumball (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasPhineasYFerb.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="Phineas y Ferb"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaPhineasYFerb.png" class="product_img">
+            <h3 class="product_title">Phineas y Ferb (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+   <a href="RompeCabezasCars.html" 
+        class="product_card"
+        data-category="juguetes"
+        data-name="El increible mundo de Gumball"
+        data-usd="0.789">
+
+            <img src="images/RompeCabezaCars.png" class="product_img">
+            <h3 class="product_title">Cars (RompeCabeza)</h3>
+            <p class="product_price" data-usd="0.789"></p>
+            
+    </a>
+
+    </div>
+</section>
+
+<script src="./js/config.js"></script>
+<script src="./js/precio.js"></script>
+<script src="./js/filtro.js"></script>
+
+
+</body>
+</html>
