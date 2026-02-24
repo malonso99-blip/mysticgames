@@ -2,6 +2,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 
+
 :root{
     --padding-container: 100px 0;
     --color-tittle: #001a49;
@@ -40,6 +41,8 @@ body {
     display: grid;
     grid-template-rows: 100px 1fr;
     color: #41094d
+    background-position: center;
+    background-size: cover;
 }
 
 .hero::before{
@@ -291,22 +294,57 @@ body {
     background-color: #8b4f99;
 }
 
+
+
+/* ========================= */
+/* 📱 VERSION MOVIL */
+/* ========================= */
+
 @media (max-width: 768px){
 
-    .products_grid{
-        grid-template-columns: 1fr;
+    /* NAV */
+    .nav{
+        padding-top: 15px;
+    }
+
+    .brand_title{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* HERO */
+    .hero{
+        grid-template-rows: 80px 1fr;
+        text-align: center;
+    }
+
+    .hero_container{
+        padding: 40px 20px;
     }
 
     .hero_title{
         font-size: 2rem;
+        font-size: 28px;
+        line-height: 1.2;
     }
 
     .hero_paragraph{
         font-size: 1rem;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* BOTÓN */
+    .cta{
+        margin-top: 20px;
+    }
+
+    /* PRODUCTOS */
+    .products_grid{
+        grid-template-columns: 1fr;
     }
 
 }
-
 
 
 .product_detail_grid{
