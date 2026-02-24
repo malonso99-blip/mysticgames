@@ -130,7 +130,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    padding-top: 20px;
 }
 
 
@@ -178,7 +178,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-     margin-left: -300px;
+     margin-left: -30px;
 }
 
 .logo_img {
@@ -205,6 +205,22 @@ body {
     -webkit-text-fill-color: transparent;
     border-bottom: 3px solid #6c5ce7;
     padding-bottom: 6px;
+}
+
+.brand_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.brand_title span {
+    display: block;
+}
+
+.brand_title span:nth-child(2) {
+    font-size: 0.8em;
+    opacity: 1; /* importante */
 }
 
 .products{
