@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MysticGames</title>
+    <link rel="shortcut icon" href="./images/" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+
+
+
+
+<header class="hero">
+ <nav class="nav container">
+   
+    <div class="nav_brand">
+        <img src="images/Logo.png" class="logo_img">
+        <h2 class="brand_title">
+        <span>Bienvenidos</span>
+        <span>a</span>
+        <span>MysticGames</span>
+        </h2>
+    </div>
+
+    <ul class="nav_link nav_link--menu">
+        <li class="nav_items">
+            <a href="index.html" class="nav_links">Inicio</a>
+        </li>
+         <li class="nav_items">
+            <a href="Catalogo.html" class="nav_links">Catálogo</a>
+        </li>
+         <li class="nav_items">
+            <a href="carrito.html" class="nav_links">Carrito</a>
+        </li>
+         <li class="nav_items">
+            <a href="#" class="nav_links">Contacto</a>
+        </li>
+
+        <img src="./images/Close.png" class="nav_close">
+    </ul>
+
+    <div class="nav_menu">
+        <img src="./images/menu.png" class="nav_img">
+    </div>
+ </nav>
+
+ <section class="cart">
+  <h2>Carrito</h2>
+
+  <div id="cart-items"></div>
+
+  <h3>Total: <span id="cart-total">$0</span></h3>
+</section>
+  <button id="btnComprar">Finalizar compra</button>
+
+</header>
+   
+
+
+<script src="./js/config.js"></script>
+<script src="./js/precio.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/compra.js"></script>
+
+</body>
+</html>
