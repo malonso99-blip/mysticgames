@@ -18,6 +18,7 @@ function ensureAddToCart() {
   const info = document.querySelector(".product_detail_info");
   const titleEl = document.querySelector(".product_title_detail");
   const priceEl = document.querySelector(".product_price");
+  const imgEl = document.querySelector(".product_detail_img");
   const name = titleEl?.textContent?.trim();
   const usd = priceEl?.dataset?.usd;
 
@@ -31,6 +32,9 @@ function ensureAddToCart() {
       if (!target.dataset.id) target.dataset.id = String(generateIdFromName(name));
       if (!target.dataset.name) target.dataset.name = name;
       if (!target.dataset.usd) target.dataset.usd = String(usd);
+      if (!target.dataset.img && imgEl?.getAttribute("src")) {
+        target.dataset.img = imgEl.getAttribute("src");
+      }
       if (!target.textContent?.trim()) target.textContent = "Agregar al carrito";
     } else {
       const btn = document.createElement("button");
@@ -38,6 +42,9 @@ function ensureAddToCart() {
       btn.dataset.id = String(generateIdFromName(name));
       btn.dataset.name = name;
       btn.dataset.usd = String(usd);
+      if (imgEl?.getAttribute("src")) {
+        btn.dataset.img = imgEl.getAttribute("src");
+      }
       btn.textContent = "Agregar al carrito";
       info.appendChild(btn);
     }
@@ -58,10 +65,13 @@ function addToCart(id, name, usd) {
   if (existing) {
     existing.cantidad++;
   } else {
+    const trigger = document.querySelector(`.add-to-cart[data-id="${id}"]`);
+    const img = trigger?.dataset?.img || "images/Logo.png";
     cart.push({
       id,
       name,
       usd,
+      img,
       cantidad: 1
     });
   }
@@ -93,7 +103,10 @@ function renderCart() {
 
     cartContainer.innerHTML += `
   <div class="cart-item">
-    <p>${item.name}</p>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img class="cart-thumb" src="${item.img || "images/Logo.png"}" alt="${item.name}">
+      <p>${item.name}</p>
+    </div>
 
     <div class="cart-controls">
       <button onclick="decreaseQuantity(${item.id})">−</button>
@@ -150,6 +163,12 @@ function showCheckoutForm() {
   if (!wrapper || !form) return false;
 
   wrapper.style.display = "block";
+  setTimeout(() => {
+    const nameEl = document.getElementById("cf-name");
+    const y = wrapper.getBoundingClientRect().top + window.scrollY - 16;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    nameEl?.focus({ preventScroll: true });
+  }, 60);
 
   cancel?.addEventListener("click", () => {
     wrapper.style.display = "none";
