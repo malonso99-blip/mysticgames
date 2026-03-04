@@ -200,7 +200,8 @@ function showCheckoutForm() {
       });
 
       const data = await response.json();
-      window.location.href = data.init_point;
+      const url = (typeof mpSandbox !== "undefined" && mpSandbox && data.sandbox_init_point) ? data.sandbox_init_point : data.init_point;
+      window.location.href = url;
     } catch (error) {
       console.error(error);
       alert("Error al iniciar el pago");
@@ -242,7 +243,8 @@ document.getElementById("btnComprar")?.addEventListener("click", async () => {
     });
 
     const data = await response.json();
-    window.location.href = data.init_point;
+    const url = (typeof mpSandbox !== "undefined" && mpSandbox && data.sandbox_init_point) ? data.sandbox_init_point : data.init_point;
+    window.location.href = url;
   } catch (error) {
     console.error(error);
     alert("Error al iniciar el pago");
