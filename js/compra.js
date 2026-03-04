@@ -10,7 +10,8 @@ document.getElementById("btnComprar").addEventListener("click", async () => {
   ];
 
   try {
-    const response = await fetch("http://localhost:3000/create_preference", {
+    const base = (typeof backendUrl === "string" ? backendUrl : window.location.origin) + "/create_preference";
+    const response = await fetch(base, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

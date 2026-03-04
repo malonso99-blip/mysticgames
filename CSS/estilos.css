@@ -483,3 +483,104 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.page-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.card {
+  background: #0f0f14;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7a00ff, #c700ff);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #20202a;
+  color: #fff;
+}
+
+.checkout-card {
+  display: none;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  background: #1a1a21;
+  border: 1px solid #2b2b36;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.contact-item a {
+  color: #9d86ff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -38,7 +38,7 @@
             <a href="carrito.html" class="nav_links">Carrito</a>
         </li>
          <li class="nav_items">
-            <a href="#" class="nav_links">Contacto</a>
+            <a href="Contacto.html" class="nav_links">Contacto</a>
         </li>
 
         <img src="./images/Close.png" class="nav_close">
@@ -49,23 +49,49 @@
     </div>
  </nav>
 
- <section class="cart">
-  <h2>Carrito</h2>
-
-  <div id="cart-items"></div>
-
-  <h3>Total: <span id="cart-total">$0</span></h3>
-</section>
-  <button id="btnComprar">Finalizar compra</button>
+ <section class="page-section cart-layout">
+   <div class="card cart-list">
+     <h2>Tu carrito</h2>
+     <div id="cart-items"></div>
+   </div>
+   <div class="card cart-summary">
+     <h3>Total</h3>
+     <p><strong><span id="cart-total">$0</span></strong></p>
+     <button id="btnComprar" class="btn btn-primary">Finalizar compra</button>
+   </div>
+ </section>
 
 </header>
+
+<section id="checkout-form" class="card checkout-card">
+  <h3>Datos del cliente</h3>
+  <form id="formDatos">
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="cf-name">Nombre y apellido</label>
+        <input id="cf-name" name="name" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="cf-contact">Contacto (email o teléfono)</label>
+        <input id="cf-contact" name="contact" type="text" required>
+      </div>
+    </div>
+    <div class="form-group" style="margin-top:12px;">
+      <label for="cf-address">Dirección de envío</label>
+      <input id="cf-address" name="address" type="text" required>
+    </div>
+    <div class="actions">
+      <button type="button" id="cf-cancel" class="btn btn-secondary" style="flex:1;">Cancelar</button>
+      <button type="submit" id="cf-submit" class="btn btn-primary" style="flex:1;">Continuar al pago</button>
+    </div>
+  </form>
+</section>
    
 
 
 <script src="./js/config.js"></script>
 <script src="./js/precio.js"></script>
 <script src="./js/cart.js"></script>
-<script src="./js/compra.js"></script>
 
 </body>
 </html>

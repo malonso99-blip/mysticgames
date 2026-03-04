@@ -22,31 +22,32 @@
             <a href="Catalogo.html" class="nav_links">Catálogo</a>
         </li>
          <li class="nav_items">
-            <a href="#" class="nav_links">contacto</a>
+            <a href="Contacto.html" class="nav_links">Contacto</a>
         </li>
          <li class="nav_items">
-            <a href="#" class="nav_links">Reseñas</a>
+            <a href="carrito.html" class="nav_links">Carrito</a>
         </li>
 
-        <img src="./images/Portal.png" class="nav_close">
+        <img src="./images/Portal.png" class="nav_close" alt="Cerrar menú">
     </ul>
 
     <div class="nav_menu">
-        <img src="./images/Portal.png" class="nav_img">
+        <img src="./images/Portal.png" class="nav_img" alt="Abrir menú">
     </div>
  </nav>
+</header>
 
 <section class="product_detail container">
 
     <div class="product_detail_grid">
 
-        <img src="./images/Aviones.png" class="product_detail_img">
+        <img src="./images/Aviones.png" class="product_detail_img" alt="Aviones de plástico">
 
         <div class="product_detail_info">
 
-    <span class="product_category">Jugete y cotillón</span>
+    <span class="product_category">Juguete y cotillón</span>
 
-    <h1 class="product_title_detail">Avión de plastico (pack doce[12])</h1>
+    <h1 class="product_title_detail">Avión de plástico (pack de 12)</h1>
 
     <p class="product_price" data-usd="1.6"></p>
 
@@ -60,12 +61,17 @@
     <div class="product_description_box">
         <h3>Descripción</h3>
         <p>
-            Bolsa de 12 aviones de plastico de diferentes colores.
-            Ideal para poner en piñata en las fiesta y repartir a los niños.
+            Bolsa de 12 aviones de plástico de diferentes colores.
+            Ideal para poner en la piñata de las fiestas y repartir a los niños.
         </p>
     </div>
 
-    <a href="#" class="cta">Agregar al carrito</a>
+    <button class="add-to-cart"
+        data-id="2"
+        data-name="Aviones"
+        data-usd="1.6">
+        Agregar al carrito
+    </button>
 
     <p class="product_guarantee">
         ✔ Compra segura | ✔ Atención personalizada
@@ -73,9 +79,11 @@
 
 </div>
 
-
+</div>
 </section>
 
 <script src="./js/config.js"></script>
 <script src="./js/precio.js"></script>
-
+<script src="./js/cart.js"></script>
+</body>
+</html>
